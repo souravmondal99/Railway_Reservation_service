@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Booking Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css1/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css1/style.css" />
+
+	
+
+</head>
+
+<body style="background-color: black">
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Book Your Train</h1>
+						</div>
+						<form action="Bookservlet" method="post">
+							
+							<div class="form-group">
+								<input class="form-control" type="text" name="name">
+								<span class="form-label">Name</span>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="number" name="age">
+										<span class="form-label">Age</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="text" name="usern">
+										<span class="form-label">User Id</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<select name="departure" class="form-control">
+											<option >Select option</option>
+										 <option value="Allahabad">Allahabad   </option>
+										 <option value="Bangalore">Bangalore   </option>
+										 <option value="Bhubaneshwar">Bhubaneshwar   </option>
+										 <option value="Bombay">Bombay   </option>
+										 <option value="Chennai">Chennai   </option>
+										 <option value="Noida">Noida   </option>
+										 <option value="Delhi">Delhi  </option>
+										 <option value="Goa">Goa   </option>
+										 <option value="Hyderabad">Hyderabad   </option>
+										 <option value="Puri">Puri   </option>
+										 <option value="Orissa">Orissa   </option>
+										 <option value="Ooty">Ooty   </option>
+										 <option value="Patna">Patna   </option> 
+										 <option value="Mysore">Mysore   </option>
+										 <option value="Shimla">Shimla   </option>
+										 <option value="Kanpur">Kanpur   </option>
+										 <option value="Kolkata">Kolkata   </option>
+										 </select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Deperture From</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<select name="destination" class="form-control">
+											<option >Select option</option>
+										<option value="Allahabad">Allahabad   </option>
+										 <option value="Bangalore">Bangalore   </option>
+										 <option value="Bhubaneshwar">Bhubaneshwar   </option>
+										 <option value="Bombay">Bombay   </option>
+										 <option value="Chennai">Chennai   </option>
+										 <option value="Noida">Noida   </option>
+										 <option value="Delhi">Delhi  </option>
+										 <option value="Goa">Goa   </option>
+										 <option value="Hyderabad">Hyderabad   </option>
+										 <option value="Puri">Puri   </option>
+										 <option value="Orissa">Orissa   </option>
+										 <option value="Ooty">Ooty   </option>
+										 <option value="Patna">Patna   </option> 
+										 <option value="Mysore">Mysore   </option>
+										 <option value="Shimla">Shimla   </option>
+										 <option value="Kanpur">Kanpur   </option>
+										 <option value="Kolkata">Kolkata   </option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Destination</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+								<div class="form-group">
+								   <select name="trnm" class="form-control">
+									   <option >Select option</option>
+									   <option value="Duronto">(12863)Duronto Exp (HWR TO YRP)</option>
+									   <option value="Rajdhani">(12301)Rajdhani Exp (HWR TO NDLS)</option>
+									   <option value="Gatimaan">(12049)Gatimaan Exp(NDLS TO AGRA)</option>
+									
+									  </select>
+									  <span class="select-arrow"></span>
+								 <span class="form-label">Train Name</span>
+								 </div>
+								</div>
+
+								<div class="col-md-6">
+								 <div class="form-group">
+								   <input name="date" class="form-control" type="text">
+								   <span class="form-label">Date Of Journey</span>
+								   </div>
+								 </div>
+						   
+						 </div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<select name="coach" class="form-control">
+											<option >Select option</option>
+											<option value="I AC">AC First Class(1A)</option>
+											<option value="II AC">AC Second Class(2A)</option>
+											<option value="III AC">AC Three Tier(3A)</option>
+											<option value="SL">Sleeper(SL)</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Travel class</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Adults</span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<select class="form-control">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Children</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<input type="submit" class="btn btn-warning" value="Proceed to Payment">
+							</div>
+						</form>
+						 <form align="center" action='login.html'>
+							<input class="button1" type=submit  value="LOG OUT">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js1/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+	</script>
+
+</body>
+
+</html>
